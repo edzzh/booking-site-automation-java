@@ -17,9 +17,9 @@ public class SignupSteps {
         selectMyAccountMenu();
     }
 
-    @And("^I select sign up button$")
-    public void iSelectSignUpButton() throws Throwable {
-        selectSignupButton();
+    @And("^I select Sign up button from drop-down menu$")
+    public void iSelectSignUpButtonFromDropDownMenu() throws Throwable {
+        selectSignUpButtonFromDropDownMenu();
     }
 
     @And("^I enter First name$")
@@ -50,6 +50,11 @@ public class SignupSteps {
     @And("^I confirm Password$")
     public void iConfirmPassword() throws Throwable {
         confirmPassword();
+    }
+
+    @And("^I select Sign up button$")
+    public void iSelectSignUpButton() throws Throwable {
+        selectSignupButton();
     }
 
     @Then("^User account page is opened$")
