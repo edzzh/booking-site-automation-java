@@ -10,7 +10,6 @@ public class SignupSteps {
     private User user = new User();
     private User userTwo = new User("Janis", "Berzins");
 
-
     @And("^I enter First name$")
     public void iEnterFirstName() throws Throwable {
         signup.enterFirstName(user.getFirstName());
